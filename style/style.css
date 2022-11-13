@@ -147,6 +147,9 @@ td, th{
     width: 70%;
     margin: 0 auto;
 }
+.main{
+    overflow: hidden;
+}
 .titulo-principal{
     text-align: center;
     font-size: 2em;
@@ -194,6 +197,7 @@ td, th{
 .diferenciales{
     padding: 3em 0;
     background: url(../img/bg1.jpg);
+    overflow: hidden;
 }
 .contenedor-diferenciales{
 
@@ -203,10 +207,10 @@ td, th{
 .contenedor-foto-diferencial{
     display: inline-block;
     width: 30vw;
-    height: 60vh;
 }
 
 .foto, .foto1,  .foto2, .foto3,  .foto4,  .foto5,  .foto6{
+    overflow: hidden;
     background: white;
     padding: 30px;  
     transition-duration: 500ms;
@@ -220,6 +224,7 @@ box-shadow: -1px -1px 42px -11px rgba(0,0,0,0.75);
     transform: scale(1.02);
     z-index: 100;
 }
+
 .foto1{
  transform: rotate(-45deg) translateX(80px) translateY(90px);
     
@@ -246,6 +251,7 @@ box-shadow: -1px -1px 42px -11px rgba(0,0,0,0.75);
 .foto-diferenciales{
     object-fit: cover;
     width: inherit;
+    margin:  auto;
     height:  inherit;
 }
 
@@ -281,3 +287,10 @@ box-shadow: -1px -1px 42px -11px rgba(0,0,0,0.75);
 footer{
     background-color: green;
 }
+
+@media only screen and (max-width: 1050px) {
+    .contenedor-foto-diferencial{
+        display: inline-block;
+        width: 100%;
+    }
+  }
