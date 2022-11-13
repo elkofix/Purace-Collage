@@ -90,9 +90,6 @@ footer{
     font-size: 13px;
 }
 
-main{
- 
-}
 form{
     margin: 40px 0;
 }
@@ -155,9 +152,12 @@ td, th{
     font-size: 2em;
     margin: 0 0 1em;
     clear: left;
+    color: white;
+    text-shadow: 0px 0px 12px rgba(0, 0, 0, 1);
 }
 .principal p{
     margin: 0 0 1em;
+    
 }
 .principal strong{
     font-weight: bold;
@@ -174,12 +174,16 @@ td, th{
 
 .mapa{
     padding: 3em 0;
-    background: linear-gradient(#fefefe, #888888);
+    background: url(../img/bg1.jpg);
     
 }
 .mapa p{
     margin: 0 0 2em;
     text-align: center;
+    font-weight: bold;
+    font-size: 1em;
+    color: white;
+    text-shadow: 0px 0px 12px rgba(0, 0, 0, 1);
 }
 .mapa-contenido {
     width: 70%;
@@ -189,7 +193,7 @@ td, th{
 }
 .diferenciales{
     padding: 3em 0;
-    background-color: #888888;
+    background: url(../img/bg1.jpg);
 }
 .contenedor-diferenciales{
 
@@ -201,13 +205,43 @@ td, th{
     width: 30vw;
     height: 60vh;
 }
-.foto{
+
+.foto, .foto1,  .foto2, .foto3,  .foto4,  .foto5,  .foto6{
     background: white;
     padding: 30px;  
     transition-duration: 500ms;
+    transform: rotate(45deg);
+    -webkit-box-shadow: -1px -1px 42px -11px rgba(0,0,0,0.75);
+-moz-box-shadow: -1px -1px 42px -11px rgba(0,0,0,0.75);
+box-shadow: -1px -1px 42px -11px rgba(0,0,0,0.75);
+
 }
-.foto:hover{
+.foto:hover, .foto1:hover, .foto2:hover, .foto3:hover, .foto4:hover, .foto5:hover, .foto6:hover{
     transform: scale(1.02);
+    z-index: 100;
+}
+.foto1{
+ transform: rotate(-45deg) translateX(80px) translateY(90px);
+    
+}
+.foto2{
+    transform: rotate(65deg) translateX(-100px) translateY(-100px);
+       
+   }
+   .foto4{
+    transform: rotate(-75deg) translateX(120px) translateY(-100px);
+       
+   }
+   .foto3{
+    transform: rotate(-15deg) translateX(160px) translateY(-100px);
+       
+   }
+      .foto5{
+    transform: rotate(25deg) translateX(-60px) translateY(-100px);
+       
+   }
+.foto6{
+    transform: rotate(-45deg) translateX(100px) translateY(-100px);
 }
 .foto-diferenciales{
     object-fit: cover;
